@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><b><b>Register Page</b></b></title>
+    <link rel="stylesheet" href="signup1.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Registration page</h2>
+      <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <hr />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <hr />
+        <label for="State">State:</label>
+        <select id="State" name="State" required>
+          <option value="">Select State</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="MP">MP</option>
+          <option value="UP">UP</option>
+        </select>
+        <hr />
+        <label for="City">City:</label>
+        <select id="City" name="City" required>
+          <option value="">Select City</option>
+          <option value="Pune">Pune</option>
+          <option value="Nashik">Nashik</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Nagpur">Nagpur</option>
+          <option value="Jalgaon">Jalgaon</option>
+          <option value="Ahmadnagar">Ahmadnagar</option>
+        </select>
+        <hr />
+        <hr />
+        <label for="DOB">DOB:</label>
+        <input type="date" id="Date" name="Date" required />
+        <hr />
+        <input type="submit" value="Register" />
+
+        <hr />
+      </form>
+    </div>
+  </body>
+</html>

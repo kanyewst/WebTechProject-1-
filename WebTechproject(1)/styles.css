@@ -1,0 +1,47 @@
+
+
+      header {
+        .page-hero {
+          background-image: url();
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          padding-top: 10%;
+          padding-bottom: 15%;
+      }
+    }
+        background-color: hsl(210, 100%, 59%), 100%, 59%);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      nav {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 5px;
+        background-color: #000000;
+      }
+
+      .login-container {
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: #f8fafc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-button {
+        text-align: center;
+        margin-top: 20px;
+      }
+ 

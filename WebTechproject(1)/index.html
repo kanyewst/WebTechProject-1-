@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spectacles Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(56, 178, 226);
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: hsl(0, 100%, 27%)), 100%, 51%);
+        color: #006aff;https://www.shutterstock.com/image-illustration/indian-flag-without-ashoka-chakra-260nw-1367827310.jpg
+        padding: 20px;
+        text-align: center;
+        opacity:0.85;
+        background-image: url('https://www.shutterstock.com/image-illustration/indian-flag-without-ashoka-chakra-260nw-1367827310.jpg');
+      }
+      header h1{
+        opacity:2;
+      }
+      nav {
+        background-color: #073c86;
+        color: #fff;
+        padding: 14px 20px;
+        text-align: center;
+      }
+      nav a {
+        color: #ffffff;
+        padding: 14px 20px;
+        text-decoration: none;
+        
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .event-boxes {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .event-box {
+        width: 30%;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .event-box img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .event-box:hover{
+        transform: scale(1.1);
+      }
+      .page-hero {
+    background-image: url(https://beyond-connect.com/wp-content/uploads/hero1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+      main {
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #006aff;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <img src="data:image/png;base64,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" alt="Event 3" /> -->
+      <h1>मातृभूमी River Cleaning Club</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="service.html">Service</a>
+      <a href="#">Cities</a>
+      <a href="#">Complaint</a>
+      <a href="#">About Us</a>
+      <a href="login.html">Login</a>
+      <a href="#">Contact</a>
+    </nav>
+    <main>
+      <h2>
+        Welcome to Matrubhoomi the river cleaning and sustainable water resource
+        deployment club
+      </h2>
+      <p>Check out our Upcoming Projects for our beloved Rivers.</p>
+      मातृभूमी River Cleaning Club
+      <div class="container">
+        <div class="event-boxes">
+          <div class="event-box">
+            <img src="https://www.learnreligions.com/thmb/9X3gLTQoakHFwLcKOxGPGWtm924=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/evening-at-varanasi-610625330-58e54bd25f9b58ef7e7c8bb9.jpg" alt="Event 1" />
+            <h2>Project 1</h2>
+            <b><u><h4>Date:04/03/2024</h4></u></b>
+            <p>The Holy Ganga River Cleanup</p>
+          </div>
+          <div class="event-box">
+            <img src="https://www.shutterstock.com/image-photo/nyingchi-scenery-qinghai-tibet-plateau-600nw-651287953.jpg" alt="Event 2" />
+            <b><h2>Project 2</h2></b>
+            <b><u><h4>Date:15/08/2024</h4></u></b>
+            <p>Sustainable Water Resource Deployment Project For Brahmaputra</p>
+          </div>
+          <div class="event-box">
+            <img src="https://cdn.britannica.com/94/142594-050-64035920/Narmada-River-Madhya-Pradesh-India.jpg" alt="Event 3" />
+            <h2>Project 3</h2>
+            <b><u><h4>Date:24/06/2024</h4></u></b>
+            
+            <p>River Conservation camp at banks of Narmada</p>
+          </div>
+        </div>
+<br>
+<br>
+<br>
+    <footer>
+      <p>
+        &copy; 2020 MotherRiver.in &ensp;•&ensp; All rights reserved to Government of India 
+        &ensp;•&ensp; 7773334456
+      </p>
+    </footer>
+  </body>
+</html>
