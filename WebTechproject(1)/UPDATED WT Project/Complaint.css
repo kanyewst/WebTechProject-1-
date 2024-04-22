@@ -1,0 +1,83 @@
+/* CSS for Complaint Form */
+body {
+  font-family: Arial, sans-serif;
+  color: #007bff; /* Blue color */
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: green; /* Green color */
+}
+
+h2 {
+  color: #007bff; /* Blue color */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #007bff; /* Blue color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+input[type="date"] {
+  /* Adjusting spacing for date input */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Increased margin between fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #007bff; /* Blue color */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover,
+input[type="date"]:hover {
+  /* Hover effect for input fields */
+  border-color: #45a049; /* Darker green color */
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  margin-bottom: 20px; /* Increased margin between upload and submit button */
+}
+
+.submit-button {
+  text-align: center; /* Aligns the content of this div to the center */
+}
+
+input[type="submit"] {
+  background-color: #4caf50; /* Green color */
+  color: #fff;
+  border: none;
+  padding: 10px 70px; /* Increased padding to increase button length */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

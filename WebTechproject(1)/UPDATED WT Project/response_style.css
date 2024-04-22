@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.response-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.response-container h2 {
+  color: #333;
+}
+
+.response-container p {
+  color: #666;
+  font-size: 18px;
+}

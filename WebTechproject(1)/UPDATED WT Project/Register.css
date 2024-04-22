@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #007bff; /* Blue color */
+  background-color: #f4f4f4;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fwaterfall-landscape-ultra-hd-wallpaper-1080x2160--635711303641844812%2F&psig=AOvVaw3rFODYs9PdlYv6RJ8_KbsE&ust=1713681879713000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJiRyNGY0IUDFQAAAAAdAAAAABAE");
+  margin: 0;
+  padding: 0px;
+}
+
+.container {
+  width: 50%;
+  margin: 20px auto; /* added margin and adjusted padding */
+  padding: 20px;
+  border: 2px solid #ccc;
+}
+
+.form-title {
+  text-align: center;
+  color: #068feb; /* Dark blue color for the title */
+  margin-bottom: 20px; /* added margin bottom for spacing */
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  text-align: center;
+  margin-bottom: 20px; /* Increased space between the button and the next field */
+}
+
+.submit-button input[type="submit"] {
+  background-color: #4caf50; /* Green color */
+  color: #fff;
+  border: none;
+  padding: 10px 60px; /* Increased padding to increase button length */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #006aff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: -50px; /* Initially hide the footer below the viewport */
+  transition: bottom 0.3s ease; /* Smooth transition for footer visibility */
+}

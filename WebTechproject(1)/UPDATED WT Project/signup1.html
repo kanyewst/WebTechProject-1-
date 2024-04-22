@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="signup1.css" />
+    <script>
+      // Function to display pop-up message and redirect after form submission
+      function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission
+        alert("Your response has been saved!! Thank you");
+        window.location.href = "response_page.html"; // Redirect to response page
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Sign-Up Page</h2>
+      <form
+        action="response_page.html"
+        method="post"
+        onsubmit="handleSubmit(event)"
+      >
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <hr />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+        <hr />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <hr />
+        <label for="State">State:</label>
+        <select id="State" name="State" required>
+          <option value="">Select State</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="MP">MP</option>
+          <option value="UP">UP</option>
+        </select>
+        <hr />
+        <label for="City">City:</label>
+        <select id="City" name="City" required>
+          <option value="">Select City</option>
+          <option value="Pune">Pune</option>
+          <option value="Nashik">Nashik</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Nagpur">Nagpur</option>
+          <option value="Jalgaon">Jalgaon</option>
+          <option value="Ahmadnagar">Ahmadnagar</option>
+        </select>
+        <hr />
+        <label for="DOB">DOB:</label>
+        <input type="date" id="Date" name="Date" required />
+        <hr />
+        <input type="submit" value="Register" />
+
+        <hr />
+      </form>
+    </div>
+    <footer>
+      <p>
+        &copy; 2020 MotherRiver.in &ensp;•&ensp; All rights reserved to
+        Government of India &ensp;•&ensp; 7773334456
+      </p>
+    </footer>
+  </body>
+</html>
